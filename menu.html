@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Menu Using HTML - CSS</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <audio  autoplay loop>
+        <source src="imgs/nhac3.mp3" type="audio/mpeg">
+    </audio>
+    <div class="container">
+        
+        <div class="flower_main">
+            <div class="flower">
+                <div class="flower_head">
+                    <div class="flower_mid"></div>
+                </div>
+                <div class="flower_leaf"></div>
+                <div class="flower_leaf secflower"></div>
+                <div class="flower_stick"></div>
+                <div class="flower_vessel">
+                    <div class="flower_vessel_bottom"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        <ul id="menu">
+            <li class="item">
+                <ion-icon name="heart-circle-outline"></ion-icon>
+                <a href="text_run.html"><span>Album</span></a>
+            </li>
+            <li class="item">
+                <ion-icon name="rose-outline"></ion-icon>
+                <a href="index2.html"><span>Flower</span></a>
+            </li>
+            <li class="item">
+                <ion-icon name="mail-unread-outline"></ion-icon>
+                <a href="card.html"><span>Message</span></a>
+            </li>
+        </ul>
+        
+
+        <div class="btn">
+            <ion-icon name="add-outline"></ion-icon>
+        </div>
+
+        
+    </div>
+
+    <script>
+        const btn = document.querySelector(".btn")
+        btn.addEventListener('click', e => {
+            btn.classList.toggle("rotateBtn");
+            document.querySelector("#menu").classList.toggle('showMenu')
+        })
+    </script>
+</body>
+
+</html>

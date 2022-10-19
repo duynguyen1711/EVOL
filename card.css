@@ -1,0 +1,176 @@
+@import url('http://fonts.cdnfonts.com/css/madelyn-2');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Square+Peg&display=swap');
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+.btn2 {
+
+  font-weight: bold;
+  font-size: 18px;
+
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  padding: 10px 40px 10px 40px;
+  margin: 20px;
+  position: relative;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+}
+
+.btn2:hover {
+  background-color: white;
+
+}
+
+/* .btn2 a:hover{
+    color:black;
+  } */
+a {
+  text-decoration: none;
+  color: #d04e4e;
+}
+
+.top {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+}
+
+figure {
+  margin-top: 50px;
+  width: 300px;
+  height: 450px;
+  position: relative;
+  background-color: #eaeaea;
+  padding: 19px 19px 85px 19px;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+}
+
+figcaption {
+  /* font-family: 'Caveat', cursive; */
+  font-family: 'Square Peg', cursive;
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+  color: #2c2c2c;
+  margin-top: 22px;
+}
+
+figure:before,
+figure:after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 180px;
+  background-color: rgba(102, 102, 102, 0.6);
+  transform: rotate(-40deg);
+}
+
+figure:before {
+  top: 3px;
+  left: -55px;
+}
+
+figure:after {
+  bottom: 3px;
+  right: -55px;
+}
+
+.bottom {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 450px;
+  perspective: 800px;
+  -webkit-perspective: 800;
+}
+.flip-card-inner > p, .flip-card-inner > h1{
+  font-family: 'Madelyn', sans-serif;
+  
+}
+.flip-card-inner p{
+  margin:20px;
+  text-align: justify;
+  font-size:24px;
+  font-weight: 800;
+  font-style: italic ;
+
+  color:#2c2c2c;
+}
+.flip-card-inner h1{
+  margin-top:20px;
+  font-weight: bolder;
+  color:#361e07;
+}
+
+.flip-card-inner {
+  position: relative;
+  margin: 0 auto;
+  width: 400px;
+  height: 100%;
+  text-align: center;
+  transition: all 2s ease;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(173, 18, 18, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+
+}
+
+.flip-card-front>img {
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-front,
+.flip-card-back {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: white;
+  color: black;
+
+}
+
+.flip-card-back {
+  background-color: #e4d6c9;
+  
+  transform: rotateY(180deg);
+}
