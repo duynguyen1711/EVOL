@@ -311,17 +311,20 @@ input#open {
 }
 
 .text-one:before {
-  content:"Ngủ sớm";
+  margin-top:5px;
+  content:"Ngủ sớm xinh đẹp";
   top:30px;
   color: #d04e4e;
 }
 
 .text-one:after {
-  content:"Ăn đủ bữa dùm ạ!";
+  margin-top:5px;
+  content:"Ăn uống đủ bữa và uống thuốc đủ nhaa!";
   top:70px;
 }
 
 .heart {
+  margin-top:10px;
   position: relative;
   background-color: #d04e4e;
   height: 60px;
